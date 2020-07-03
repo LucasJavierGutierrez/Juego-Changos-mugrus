@@ -51,8 +51,10 @@
 		<Linker>
 			<Add directory="C:/SFML-2.5.1/lib" />
 		</Linker>
+		<Unit filename="include/cartas.h" />
 		<Unit filename="include/juego.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/cartas.cpp" />
 		<Unit filename="src/juego.cpp" />
 		<Extensions>
 			<code_completion />

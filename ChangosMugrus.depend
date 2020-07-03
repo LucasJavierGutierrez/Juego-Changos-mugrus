@@ -526,3 +526,30 @@
 	<cstdlib>
 	"juego.h"
 
+1593714902 source:c:\users\guti\documents\github\juego-changos-mugrus\main.cpp
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<cstdlib>
+	"juego.h"
+
+1593714262 c:\users\guti\documents\github\juego-changos-mugrus\include\juego.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	"cartas.h"
+
+1593785376 source:c:\users\guti\documents\github\juego-changos-mugrus\src\juego.cpp
+	"juego.h"
+	<cstdlib>
+
+1593562815 c:\users\guti\documents\github\juego-changos-mugrus\include\menu.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+
+1593775709 c:\users\guti\documents\github\juego-changos-mugrus\include\cartas.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+
+1593775672 source:c:\users\guti\documents\github\juego-changos-mugrus\src\cartas.cpp
+	"cartas.h"
+	<cstdlib>
+
