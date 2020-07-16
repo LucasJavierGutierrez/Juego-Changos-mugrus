@@ -26,7 +26,7 @@ personaje::personaje()
 
     vida = 140;
 
-    mana = 1;
+    mana = 5;
 
 }
 

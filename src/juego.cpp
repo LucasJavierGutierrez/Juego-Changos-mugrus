@@ -141,6 +141,10 @@ EscenarioS = new Sprite;
 
     vidaEnemigo = enemigo1->get_vida();
 
+    vidaActual = vida;
+
+    vidaEnemigoActual = vidaEnemigo;
+
     vidaActualizando = 0;
 
     manaActualizando = 0;
@@ -156,8 +160,6 @@ EscenarioS = new Sprite;
     turnoTerminado = false;
 
     bandera2 = true;
-
-    tt=0;
 
  gameLoop();
 
@@ -196,12 +198,6 @@ void juego::dibujar()
                     }
     }
 
-   vidaActual = vida + vidaActualizando;
-
-   vidaEnemigoActual = vidaEnemigo + vidaEnemigoActualizando;
-
-
-
     std::ostringstream ss;
         ss << vidaActual;
   string  s = ss.str();
@@ -210,7 +206,7 @@ void juego::dibujar()
     texto_vida->setString((s)+" HP");
 
         std::ostringstream mm;
-        manaActual=manaActual+tt;
+        if(turnoTerminado) {manaActual=mana;}
         mm << manaActual;
   string  m = mm.str();
 
@@ -228,11 +224,11 @@ void juego::dibujar()
 
     window->draw(*texto_vidaEnemigo);
 
-    if(!turnoTerminado){
+ //   if(!turnoTerminado){
     window->draw(*botonTurno);
 
     window->draw(*texto_turno);
-                      }
+   //                   }
 
 
     window->draw(personajePri->get_spriteMana());
@@ -256,7 +252,7 @@ void juego::gameLoop(){
 
     if(turnoTerminado==true||bandera2==true)
 {
-
+    turnoTerminado=false;
     bandera2=false;
 //      *tiempo3 = reloj2->getElapsedTime();
 //      tiempo4 = tiempo3->asSeconds();
@@ -268,7 +264,7 @@ void juego::gameLoop(){
             slot_cartas[i]=true;
 
   cartas_tocadas[i] = new cartas({ (float)(60+(150.0*i)),(float)430.0 });
-            };
+            }
     }
 // reloj2->restart();
   }
@@ -372,18 +368,41 @@ if(bandera1==false){
 void juego::accion(int numeroCarta)
 {
    if(numeroCarta == 0) ;
-else if(numeroCarta == 1) ;
-else if(numeroCarta == 2||5) vidaActualizando=30;
+
+else if(numeroCarta == 1)
+{
+    vidaEnemigoActualizando=-15;
+    vidaEnemigoActual = vidaEnemigoActual + vidaEnemigoActualizando;
+}
+else if(numeroCarta == 2|| numeroCarta == 5)
+{
+    vidaActualizando=30;
+    vidaActual = vidaActual + vidaActualizando;
+}
 else if(numeroCarta == 3) ;
-else if(numeroCarta == 4) ;
-// else if(numero_cartas == 5);
+else if(numeroCarta == 4)
+{
+    vidaEnemigoActualizando=-20;
+    vidaEnemigoActual = vidaEnemigoActual + vidaEnemigoActualizando;
+}
 else if(numeroCarta == 6) ;
-else if(numeroCarta == 7) ;
-else if(numeroCarta == 8) ;
+else if(numeroCarta == 7)
+{
+    vidaEnemigoActualizando=-45;
+    vidaEnemigoActual = vidaEnemigoActual + vidaEnemigoActualizando;
+}
+else if(numeroCarta == 8)
+{
+    vidaActualizando=5;
+    vidaActual = vidaActual + vidaActualizando;
+}
 else if(numeroCarta == 9) ;
 else if(numeroCarta == 10);
 else if(numeroCarta == 11);
-else if(numeroCarta == 12);
+else if(numeroCarta == 12)
+{
+
+}
 
 }
 

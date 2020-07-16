@@ -71,7 +71,8 @@ class juego
     bool manaAlcanza;
     float tiempo2;
     float tiempo4;
-    int tt;
+
+
 
 };
 

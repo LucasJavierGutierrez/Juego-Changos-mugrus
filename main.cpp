@@ -8,7 +8,7 @@
 using namespace std;
 using namespace sf;
 
-int main(int argc, char * args[])
+int main()
 {
 
 
