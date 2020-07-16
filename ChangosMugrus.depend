@@ -1,11 +1,9 @@
 # depslib dependency file v1.0
-1593445222 source:c:\users\guti\desktop\proyectos\juego changos mugrus\src\juego.cpp
-	"juego.h"
-	<cstdlib>
-
-1593443212 c:\users\guti\desktop\proyectos\juego changos mugrus\include\juego.h
+1594841599 source:c:\users\guti\documents\github\juego-changos-mugrus\main.cpp
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
+	<cstdlib>
+	"juego.h"
 
 1525812018 c:\sfml-2.5.1\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -520,36 +518,40 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1593439161 source:c:\users\guti\desktop\proyectos\juego changos mugrus\main.cpp
+1594926906 c:\users\guti\documents\github\juego-changos-mugrus\include\juego.h
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
-	<cstdlib>
-	"juego.h"
-
-1593714902 source:c:\users\guti\documents\github\juego-changos-mugrus\main.cpp
-	<SFML/Audio.hpp>
-	<SFML/Graphics.hpp>
-	<cstdlib>
-	"juego.h"
-
-1593714262 c:\users\guti\documents\github\juego-changos-mugrus\include\juego.h
-	<SFML/Audio.hpp>
-	<SFML/Graphics.hpp>
+	<iostream>
 	"cartas.h"
+	"personaje.h"
+	"enemigo.h"
 
-1593785376 source:c:\users\guti\documents\github\juego-changos-mugrus\src\juego.cpp
-	"juego.h"
-	<cstdlib>
-
-1593562815 c:\users\guti\documents\github\juego-changos-mugrus\include\menu.h
+1594904305 c:\users\guti\documents\github\juego-changos-mugrus\include\cartas.h
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 
-1593775709 c:\users\guti\documents\github\juego-changos-mugrus\include\cartas.h
-	<SFML/Audio.hpp>
-	<SFML/Graphics.hpp>
-
-1593775672 source:c:\users\guti\documents\github\juego-changos-mugrus\src\cartas.cpp
+1594904587 source:c:\users\guti\documents\github\juego-changos-mugrus\src\cartas.cpp
 	"cartas.h"
 	<cstdlib>
+
+1594928051 source:c:\users\guti\documents\github\juego-changos-mugrus\src\juego.cpp
+	"juego.h"
+	<cstdlib>
+	<sstream>
+	<string>
+	<iostream>
+
+1594853058 c:\users\guti\documents\github\juego-changos-mugrus\include\personaje.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+
+1594915764 source:c:\users\guti\documents\github\juego-changos-mugrus\src\personaje.cpp
+	"personaje.h"
+
+1594855399 c:\users\guti\documents\github\juego-changos-mugrus\include\enemigo.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+
+1594855693 source:c:\users\guti\documents\github\juego-changos-mugrus\src\enemigo.cpp
+	"enemigo.h"
 

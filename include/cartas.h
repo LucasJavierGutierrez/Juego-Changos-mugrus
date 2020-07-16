@@ -9,15 +9,19 @@ using namespace sf;
 class cartas
 {
     public:
-        cartas();
+        cartas(Vector2f posicion);
  //       virtual ~cartas();
         Sprite get_sprite();
+        int getNumero_cartas();
+        int getCostoCartaMana();
 
     protected:
- Sprite cartasS;
- Texture cartasT;
+
     private:
+    Sprite cartasS;
+    Texture cartasT;
     int numero_cartas;
+    int CostoCartaMana;
 };
 
 #endif // CARTAS_H
